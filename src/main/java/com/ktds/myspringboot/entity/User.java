@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @DynamicUpdate
+
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
