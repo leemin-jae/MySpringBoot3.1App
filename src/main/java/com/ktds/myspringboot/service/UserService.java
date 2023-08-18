@@ -58,4 +58,11 @@ public class UserService {
         return modelMapper.map(existUser, UserResDto.class);
     }
 
+    public void deleteUser(Long id){
+        User existUser = userRepository.findById(id)
+                .orElseThrow(() ->
+                        new BusinessException(id + " User Not Found", HttpStatus.NOT_FOUND));
+        userRepository.delete(existUser);
+    }
+
 }
