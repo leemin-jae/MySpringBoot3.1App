@@ -6,6 +6,8 @@ import com.ktds.myspringboot.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/users")
@@ -20,6 +22,11 @@ public class UserRestController {
     @GetMapping("/{myId}")
     public UserResDto getUserById(@PathVariable("myId") Long id){
         return userService.getUserById(id);
+    }
+
+    @GetMapping
+    public List<UserResDto> getUser(){
+        return userService.getUsers();
     }
 
 }
