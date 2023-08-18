@@ -14,6 +14,8 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.toList;
+
 @Service
 @Transactional
 @RequiredArgsConstructor
@@ -42,9 +44,18 @@ public class UserService {
         List<User> userList = userRepository.findAll();
         List<UserResDto> userResDtoList = userList.stream() // stream<User>
                 .map(user -> modelMapper.map(user, UserResDto.class))  // Stream<UserResDto
-                .collect(Collectors.toList());
+                .collect(toList());
 
         return userResDtoList;
+    }
+
+    public UserResDto updateUser(String email, UserReqDto userReqDto) {
+        User existUser = userRepository.findByEmail(email)
+                .orElseThrow(() ->
+                        new BusinessException(email + " User Not Found", HttpStatus.NOT_FOUND));
+        //setter method 호출
+        existUser.setName(userReqDto.getName());
+        return modelMapper.map(existUser, UserResDto.class);
     }
 
 }

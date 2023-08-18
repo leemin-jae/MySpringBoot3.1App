@@ -3604,3 +3604,42 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: (conn=8) Duplicate
 2023-08-18T10:17:36.305+09:00  INFO 13176 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-08-18T10:17:36.306+09:00  INFO 13176 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
 2023-08-18T10:17:36.310+09:00  INFO 13176 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2023-08-18T10:17:39.934+09:00  INFO 9256 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9256 (C:\minjae\workspace\MySpringBoot3.1App\target\classes started by User in C:\minjae\workspace\MySpringBoot3.1App)
+2023-08-18T10:17:39.939+09:00  INFO 9256 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T10:17:39.977+09:00  INFO 9256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-18T10:17:39.978+09:00  INFO 9256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-18T10:17:40.505+09:00  INFO 9256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T10:17:40.552+09:00  INFO 9256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2023-08-18T10:17:41.161+09:00  INFO 9256 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T10:17:41.171+09:00  INFO 9256 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T10:17:41.172+09:00  INFO 9256 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T10:17:41.217+09:00  INFO 9256 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T10:17:41.219+09:00  INFO 9256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1239 ms
+2023-08-18T10:17:41.249+09:00  INFO 9256 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-08-18T10:17:41.323+09:00  INFO 9256 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@24e2c547
+2023-08-18T10:17:41.324+09:00  INFO 9256 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-08-18T10:17:41.333+09:00  INFO 9256 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T10:17:41.426+09:00  INFO 9256 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T10:17:41.470+09:00  INFO 9256 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-18T10:17:41.471+09:00  INFO 9256 --- [restartedMain] o.h.c.Environment                        : HHH000406: Using bytecode reflection optimizer
+2023-08-18T10:17:41.566+09:00  INFO 9256 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:17:41.661+09:00  INFO 9256 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T10:17:41.830+09:00  INFO 9256 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:17:42.253+09:00  INFO 9256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T10:17:42.289+09:00  INFO 9256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:17:42.586+09:00  WARN 9256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T10:17:42.766+09:00  WARN 9256 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-18T10:17:42.877+09:00  INFO 9256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T10:17:42.932+09:00  INFO 9256 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T10:17:42.940+09:00  INFO 9256 --- [restartedMain] c.k.m.Application                        : Started Application in 3.347 seconds (process running for 3.892)
+2023-08-18T10:17:42.942+09:00  INFO 9256 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스 명 com.zaxxer.hikari.HikariDataSource 
+2023-08-18T10:17:42.943+09:00  INFO 9256 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T10:17:42.943+09:00  INFO 9256 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T10:17:42.943+09:00  INFO 9256 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Username = boot 
+2023-08-18T10:17:42.943+09:00  INFO 9256 --- [restartedMain] c.k.m.r.MyRunner                         : Logger 구현클래스이름 = org.apache.logging.slf4j.Log4jLogger
+2023-08-18T10:17:42.944+09:00  INFO 9256 --- [restartedMain] c.k.m.r.MyRunner                         : MyBootProperties getName = Spring 운영환경
+2023-08-18T10:17:42.944+09:00  INFO 9256 --- [restartedMain] c.k.m.r.MyRunner                         : MyBootProperties getAge = 77
+2023-08-18T10:17:42.944+09:00  INFO 9256 --- [restartedMain] c.k.m.r.MyRunner                         : MyBootProperties getFullName = Spring 운영환경 Boot
+2023-08-18T10:17:45.979+09:00  INFO 9256 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-18T10:17:45.979+09:00  INFO 9256 --- [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-18T10:17:45.980+09:00  INFO 9256 --- [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
